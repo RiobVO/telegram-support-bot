@@ -1,0 +1,19 @@
+# venv
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# env
+.env
+app/.env.dev
+!.env.example
+
+# IDE
+.idea/
+.vscode/
