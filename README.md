@@ -54,6 +54,39 @@
 Админские команды вынесены в отдельный модуль `handlers_admin.py`, чтобы не смешивать пользовательскую и служебную логику.
 
 
+## Клонировать репозиторий
+
+git clone https://github.com/RiobVO/project_roote.git
+cd project_roote
+
+## Создать виртуальное окружение и установить зависимости
+
+python -m venv .venv
+
+# Активировать окружение:
+# Windows (PowerShell):
+.venv\Scripts\Activate.ps1
+
+# Windows (cmd):
+.venv\Scripts\activate
+
+# Linux / macOS:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+## Настроить конфигурацию
+
+cp app/.env.example app/.env.dev
+# на Windows можно использовать:
+# copy app\.env.example app\.env.dev
+
+Отредактировать файл app/.env.dev и подставить свои значения токена бота, ID служебного чата, админов и параметров Bitrix24 (см. раздел ниже).
+
+## Запустить бота
+
+python app/main.py
+
 ## Стек
 
 - **Python 3.10+**
