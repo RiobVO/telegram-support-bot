@@ -103,18 +103,28 @@ python app\main.py
 ```
 
 ## Установка и запуск  (Linux / macOS)
+### 1. Клонирование репозитория
 
+Откройте терминал и выполните:
 ```
 git clone https://github.com/RiobVO/telegram-support-bot.git
 cd telegram-support-bot
-
+```
+### 2. Создание виртуального окружения и установка зависимостей
+```
 python3 -m venv .venv
 source .venv/bin/activate
-
 pip install -r requirements.txt
-
+```
+### 3. Настройка переменных окружения
+```
 cp app/.env.example app/.env.dev
+```
+Откройте файл app.env.dev и заполните необходимые значения.
 
+### 4. Запуск бота
+
+```
 python app/main.py
 ```
 ---
